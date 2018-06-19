@@ -1,0 +1,19 @@
+PODS:
+  - JLRoutes (2.1)
+  - ZHMediator (0.1.0):
+    - JLRoutes (~> 2.1)
+
+DEPENDENCIES:
+  - ZHMediator (from `../`)
+
+EXTERNAL SOURCES:
+  ZHMediator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
+  ZHMediator: 92700c22db52f6d3c987f2a02a24317f0b120e08
+
+PODFILE CHECKSUM: 4ad522d52c99a783397ba8b701512fb0f8b1a85a
+
+COCOAPODS: 1.4.0
