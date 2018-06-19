@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZHMediator_Example' do
+  pod 'ZHMediator', :path => '../'
+
+  target 'ZHMediator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
