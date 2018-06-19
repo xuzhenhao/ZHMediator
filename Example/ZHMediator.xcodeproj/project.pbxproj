@@ -24,6 +24,11 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B16669EA8991D25D25E9A7E7 /* Pods_ZHMediator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A5B665DBCD13BE64AAA82C /* Pods_ZHMediator_Example.framework */; };
+		E7ED4CD320D8F075002AEEB5 /* ZHAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CD220D8F075002AEEB5 /* ZHAViewController.m */; };
+		E7ED4CD620D8F082002AEEB5 /* ZHBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CD520D8F082002AEEB5 /* ZHBViewController.m */; };
+		E7ED4CDA20D8F0E5002AEEB5 /* ZHBTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CD920D8F0E5002AEEB5 /* ZHBTarget.m */; };
+		E7ED4CDD20D8F11C002AEEB5 /* ZHATarget.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CDC20D8F11C002AEEB5 /* ZHATarget.m */; };
+		E7ED4CE020D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CDF20D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +44,10 @@
 /* Begin PBXFileReference section */
 		117312195EAB05F3280486A7 /* Pods-ZHMediator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHMediator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHMediator_Tests/Pods-ZHMediator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		208BB1EF4EDE3E548D77B7CA /* Pods-ZHMediator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHMediator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHMediator_Example/Pods-ZHMediator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2E554E40B36211872312533A /* ZHMediator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZHMediator.podspec; path = ../ZHMediator.podspec; sourceTree = "<group>"; };
-		2F0E5EDDE3D59B9D8B6E6AC9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2E554E40B36211872312533A /* ZHMediator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZHMediator.podspec; path = ../ZHMediator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2F0E5EDDE3D59B9D8B6E6AC9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		37A5B665DBCD13BE64AAA82C /* Pods_ZHMediator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHMediator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		428D842D4DC73B4F33A6D85C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		428D842D4DC73B4F33A6D85C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZHMediator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHMediator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +71,16 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BE933859D3242696D14582D /* Pods_ZHMediator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHMediator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7ED4CD120D8F075002AEEB5 /* ZHAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAViewController.h; sourceTree = "<group>"; };
+		E7ED4CD220D8F075002AEEB5 /* ZHAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAViewController.m; sourceTree = "<group>"; };
+		E7ED4CD420D8F082002AEEB5 /* ZHBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHBViewController.h; sourceTree = "<group>"; };
+		E7ED4CD520D8F082002AEEB5 /* ZHBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBViewController.m; sourceTree = "<group>"; };
+		E7ED4CD820D8F0E5002AEEB5 /* ZHBTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHBTarget.h; sourceTree = "<group>"; };
+		E7ED4CD920D8F0E5002AEEB5 /* ZHBTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBTarget.m; sourceTree = "<group>"; };
+		E7ED4CDB20D8F11C002AEEB5 /* ZHATarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHATarget.h; sourceTree = "<group>"; };
+		E7ED4CDC20D8F11C002AEEB5 /* ZHATarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHATarget.m; sourceTree = "<group>"; };
+		E7ED4CDE20D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHMediator+ZHModuleAActions.h"; sourceTree = "<group>"; };
+		E7ED4CDF20D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZHMediator+ZHModuleAActions.m"; sourceTree = "<group>"; };
 		EF71A713B2F5B53A84955B28 /* Pods-ZHMediator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHMediator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHMediator_Example/Pods-ZHMediator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +158,8 @@
 		6003F593195388D20070C39A /* Example for ZHMediator */ = {
 			isa = PBXGroup;
 			children = (
+				E7ED4CD720D8F0A6002AEEB5 /* Categories */,
+				E7ED4CCE20D8EFA4002AEEB5 /* Modules */,
 				6003F59C195388D20070C39A /* ZHAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZHAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +211,46 @@
 				2F0E5EDDE3D59B9D8B6E6AC9 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		E7ED4CCE20D8EFA4002AEEB5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E7ED4CD020D8EFC3002AEEB5 /* ModuleB */,
+				E7ED4CCF20D8EFB4002AEEB5 /* ModuleA */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E7ED4CCF20D8EFB4002AEEB5 /* ModuleA */ = {
+			isa = PBXGroup;
+			children = (
+				E7ED4CDB20D8F11C002AEEB5 /* ZHATarget.h */,
+				E7ED4CDC20D8F11C002AEEB5 /* ZHATarget.m */,
+				E7ED4CD120D8F075002AEEB5 /* ZHAViewController.h */,
+				E7ED4CD220D8F075002AEEB5 /* ZHAViewController.m */,
+			);
+			path = ModuleA;
+			sourceTree = "<group>";
+		};
+		E7ED4CD020D8EFC3002AEEB5 /* ModuleB */ = {
+			isa = PBXGroup;
+			children = (
+				E7ED4CD820D8F0E5002AEEB5 /* ZHBTarget.h */,
+				E7ED4CD920D8F0E5002AEEB5 /* ZHBTarget.m */,
+				E7ED4CD420D8F082002AEEB5 /* ZHBViewController.h */,
+				E7ED4CD520D8F082002AEEB5 /* ZHBViewController.m */,
+			);
+			path = ModuleB;
+			sourceTree = "<group>";
+		};
+		E7ED4CD720D8F0A6002AEEB5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E7ED4CDE20D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.h */,
+				E7ED4CDF20D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +307,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "632476744@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = GF72L9K2ER;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -334,10 +394,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZHMediator_Example/Pods-ZHMediator_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
 				"${BUILT_PRODUCTS_DIR}/ZHMediator/ZHMediator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZHMediator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,7 +465,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7ED4CDD20D8F11C002AEEB5 /* ZHATarget.m in Sources */,
+				E7ED4CD320D8F075002AEEB5 /* ZHAViewController.m in Sources */,
+				E7ED4CDA20D8F0E5002AEEB5 /* ZHBTarget.m in Sources */,
 				6003F59E195388D20070C39A /* ZHAppDelegate.m in Sources */,
+				E7ED4CE020D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.m in Sources */,
+				E7ED4CD620D8F082002AEEB5 /* ZHBViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* ZHViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -533,9 +600,11 @@
 			baseConfigurationReference = EF71A713B2F5B53A84955B28 /* Pods-ZHMediator_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GF72L9K2ER;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZHMediator/ZHMediator-Prefix.pch";
 				INFOPLIST_FILE = "ZHMediator/ZHMediator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,9 +617,11 @@
 			baseConfigurationReference = 208BB1EF4EDE3E548D77B7CA /* Pods-ZHMediator_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GF72L9K2ER;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZHMediator/ZHMediator-Prefix.pch";
 				INFOPLIST_FILE = "ZHMediator/ZHMediator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,6 +7,7 @@
 //
 
 #import "ZHViewController.h"
+#import "ZHMediator+ZHModuleAActions.h"
 
 @interface ZHViewController ()
 
@@ -17,13 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    //每个Category对应一个模块，包括了该模块的所有服务，其他模块通过Category调用。
+    UIViewController *vc = [[ZHMediator sharedInstance] AViewControllerWithTitle:@"ModuleA"] ;
+    [self presentViewController:vc animated:YES completion:nil];
 }
+
 
 @end
