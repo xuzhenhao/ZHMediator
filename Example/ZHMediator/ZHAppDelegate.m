@@ -7,12 +7,13 @@
 //
 
 #import "ZHAppDelegate.h"
+#import "Appdelegate+ZHMediatorRoute.h"
 
 @implementation ZHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self zh_configRouter];
     return YES;
 }
 

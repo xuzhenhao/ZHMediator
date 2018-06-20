@@ -6,6 +6,7 @@
 //
 
 #import "ZHMediator.h"
+#import <JLRoutes/JLRoutes.h>
 
 @interface ZHMediator ()
 
@@ -85,6 +86,20 @@
              action:(NSString *)actionName
              params:(NSDictionary *)params{
     return [self performTarget:targetName action:actionName params:params shouldCacheTarget:NO];
+}
++ (BOOL)routeURL:(NSURL *)url;{
+    return [JLRoutes routeURL:url];
+}
++ (void)addSchema:(NSString *)schema
+       targetName:(NSString *)targetName
+       actionName:(NSString *)actionName
+       completion:(void(^)(id result))completion{
+    
+    JLRoutes.globalRoutes[schema] = ^BOOL(NSDictionary *parameters){
+        id vc = [[ZHMediator sharedInstance] performTarget:targetName action:actionName params:parameters];
+        completion(vc);
+        return YES;
+    };
 }
 - (void)releaseCachedTargetWithTargetName:(NSString *)targetName{
     [self.cachedTarget removeObjectForKey:targetName];

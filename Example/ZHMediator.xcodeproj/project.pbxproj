@@ -24,9 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B16669EA8991D25D25E9A7E7 /* Pods_ZHMediator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A5B665DBCD13BE64AAA82C /* Pods_ZHMediator_Example.framework */; };
+		E7162E3920D9F7D000B533D3 /* Appdelegate+ZHMediatorRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = E7162E3820D9F7D000B533D3 /* Appdelegate+ZHMediatorRoute.m */; };
 		E7ED4CD320D8F075002AEEB5 /* ZHAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CD220D8F075002AEEB5 /* ZHAViewController.m */; };
-		E7ED4CD620D8F082002AEEB5 /* ZHBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CD520D8F082002AEEB5 /* ZHBViewController.m */; };
-		E7ED4CDA20D8F0E5002AEEB5 /* ZHBTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CD920D8F0E5002AEEB5 /* ZHBTarget.m */; };
 		E7ED4CDD20D8F11C002AEEB5 /* ZHATarget.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CDC20D8F11C002AEEB5 /* ZHATarget.m */; };
 		E7ED4CE020D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ED4CDF20D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.m */; };
 /* End PBXBuildFile section */
@@ -71,12 +70,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BE933859D3242696D14582D /* Pods_ZHMediator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHMediator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7162E3720D9F7D000B533D3 /* Appdelegate+ZHMediatorRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Appdelegate+ZHMediatorRoute.h"; sourceTree = "<group>"; };
+		E7162E3820D9F7D000B533D3 /* Appdelegate+ZHMediatorRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Appdelegate+ZHMediatorRoute.m"; sourceTree = "<group>"; };
 		E7ED4CD120D8F075002AEEB5 /* ZHAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAViewController.h; sourceTree = "<group>"; };
 		E7ED4CD220D8F075002AEEB5 /* ZHAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAViewController.m; sourceTree = "<group>"; };
-		E7ED4CD420D8F082002AEEB5 /* ZHBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHBViewController.h; sourceTree = "<group>"; };
-		E7ED4CD520D8F082002AEEB5 /* ZHBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBViewController.m; sourceTree = "<group>"; };
-		E7ED4CD820D8F0E5002AEEB5 /* ZHBTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHBTarget.h; sourceTree = "<group>"; };
-		E7ED4CD920D8F0E5002AEEB5 /* ZHBTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBTarget.m; sourceTree = "<group>"; };
 		E7ED4CDB20D8F11C002AEEB5 /* ZHATarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHATarget.h; sourceTree = "<group>"; };
 		E7ED4CDC20D8F11C002AEEB5 /* ZHATarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHATarget.m; sourceTree = "<group>"; };
 		E7ED4CDE20D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHMediator+ZHModuleAActions.h"; sourceTree = "<group>"; };
@@ -216,7 +213,6 @@
 		E7ED4CCE20D8EFA4002AEEB5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E7ED4CD020D8EFC3002AEEB5 /* ModuleB */,
 				E7ED4CCF20D8EFB4002AEEB5 /* ModuleA */,
 			);
 			path = Modules;
@@ -233,22 +229,13 @@
 			path = ModuleA;
 			sourceTree = "<group>";
 		};
-		E7ED4CD020D8EFC3002AEEB5 /* ModuleB */ = {
-			isa = PBXGroup;
-			children = (
-				E7ED4CD820D8F0E5002AEEB5 /* ZHBTarget.h */,
-				E7ED4CD920D8F0E5002AEEB5 /* ZHBTarget.m */,
-				E7ED4CD420D8F082002AEEB5 /* ZHBViewController.h */,
-				E7ED4CD520D8F082002AEEB5 /* ZHBViewController.m */,
-			);
-			path = ModuleB;
-			sourceTree = "<group>";
-		};
 		E7ED4CD720D8F0A6002AEEB5 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				E7ED4CDE20D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.h */,
 				E7ED4CDF20D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.m */,
+				E7162E3720D9F7D000B533D3 /* Appdelegate+ZHMediatorRoute.h */,
+				E7162E3820D9F7D000B533D3 /* Appdelegate+ZHMediatorRoute.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -467,10 +454,9 @@
 			files = (
 				E7ED4CDD20D8F11C002AEEB5 /* ZHATarget.m in Sources */,
 				E7ED4CD320D8F075002AEEB5 /* ZHAViewController.m in Sources */,
-				E7ED4CDA20D8F0E5002AEEB5 /* ZHBTarget.m in Sources */,
 				6003F59E195388D20070C39A /* ZHAppDelegate.m in Sources */,
 				E7ED4CE020D8F1FF002AEEB5 /* ZHMediator+ZHModuleAActions.m in Sources */,
-				E7ED4CD620D8F082002AEEB5 /* ZHBViewController.m in Sources */,
+				E7162E3920D9F7D000B533D3 /* Appdelegate+ZHMediatorRoute.m in Sources */,
 				6003F5A7195388D20070C39A /* ZHViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

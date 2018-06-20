@@ -9,8 +9,6 @@
 
 @interface ZHMediator : NSObject
 
-#pragma mark - todo
-//1.可以配置无方法响应时，默认执行的对象名和方法名（提示升级页）
 
 + (instancetype)sharedInstance;
 
@@ -46,6 +44,27 @@
 - (id)performTarget:(NSString *)targetName
              action:(NSString *)actionName
              params:(NSDictionary *)params;
+
+/**
+ 远程schema(URL)调用入口
+
+ @param url URL
+ @return 是否成功
+ */
++ (BOOL)routeURL:(NSURL *)url;
+
+/**
+ 添加路由导航规则
+
+ @param schema 路由规则，e.g @"/user/view/:name" :name表示参数，必须和action所需参数的字段名一致
+ @param targetName 目标对象
+ @param actionName 对象执行的方法名
+ @param completion 完成回调
+ */
++ (void)addSchema:(NSString *)schema
+       targetName:(NSString *)targetName
+       actionName:(NSString *)actionName
+       completion:(void(^)(id result))completion;
 
 /**
  移除缓存的对象
